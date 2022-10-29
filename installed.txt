@@ -1,0 +1,4 @@
+Key Promoter X
+com.laravel_idea.plugin
+com.magento.idea.magento2plugin
+ru.adelf.idea.dotenv

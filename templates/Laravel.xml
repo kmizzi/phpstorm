@@ -1,0 +1,15 @@
+<templateSet group="Laravel">
+  <template name="sect" value="/*&#10;|--------------------------------------------------------------------------&#10;| $SECTION$&#10;|--------------------------------------------------------------------------&#10;*/" description="Comment section" toReformat="false" toShortenFQNames="true">
+    <variable name="SECTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hasone" value="public function $relationship$() : HasOne {&#10;    return $this-&gt;hasOne($model$::class);&#10;}" description="Has one model relationship" toReformat="false" toShortenFQNames="true">
+    <variable name="relationship" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="model" expression="capitalize(relationship)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
